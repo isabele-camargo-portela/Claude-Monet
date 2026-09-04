@@ -1,6 +1,8 @@
 body, section, h1, h2 {
     margin: 0px;
-    padding:0px;
+    padding:0px; 
+
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h1, h2, h3, p, a {
@@ -77,11 +79,11 @@ main {
 }
 
 #introducao div {
-    margin: 100px 400px;
+    margin: 100px 200px;
     
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: space-between;
 
     align-items: center;
 }
@@ -89,6 +91,15 @@ main {
 #introducao div h1, p {
     padding: 50px;
     text-align: left;
+}
+
+#introducao div h1 {
+    font-family: monospace;
+    font-size: 150px;
+}
+
+#introducao div p {
+    width: 300px;
 }
 
 #linha_tempo {
@@ -178,6 +189,8 @@ main {
 
 #arte h1 {
     text-align: center;
+    font-family: monospace;
+    font-size: 100px;
 }
 
 #sobre_sua_arte {
@@ -284,6 +297,8 @@ main {
 #trabalhos h1 {
     padding: 150px 0px 400px;
     text-align: center;
+    font-family: monospace;
+    font-size: 100px;
 }
 
 .introducao {
