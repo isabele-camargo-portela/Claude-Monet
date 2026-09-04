@@ -5,7 +5,7 @@ body, section, h1, h2 {
     font-family: 'Courier New', Courier, monospace;
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, h4, p, a {
     color: #fafafa;
 }
 
@@ -116,8 +116,9 @@ main {
 }
 
 .cards {
-    width: 80%;
-    padding: 25px 50px;
+    width: 1260px;
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
 
     display: flex;
     gap: 20px;
@@ -129,7 +130,7 @@ main {
 .card {
     background-color: #232323;
 
-    min-width: 300px;
+    flex: 0 0 300px;
     height: 450px;
 
     border-radius: 20px;
@@ -155,21 +156,23 @@ main {
 
 .scroll {
     display: flex;
-    flex-flow: row;
+    justify-content: center;
 
-    align-items: center;
+    gap: 40px;
+
+    margin: 30px 0px;
 }
 
 .scroll button {
-    margin: 50px;
+    margin: 0;
     padding: 20px;
-
+    
     background-color: #232323;
-
-    border: 0px;
-    border-radius: 55%;
-
+    border: 0;
+    border-radius: 50%;
     color: #fafafa;
+    
+    cursor: pointer;
 }
 
 /* Sua Arte */
@@ -193,22 +196,33 @@ main {
     font-size: 100px;
 }
 
-#sobre_sua_arte {
+#arte p {
+    margin: 0px;
+    padding: 10px;
     width: 100%;
-    padding-bottom: 200px;
-    background-image: linear-gradient(to top, rgba(0,0,0,0) 5%, #08090a 45%), url("../img/woman_with_a_parasol_-_madame_monet_and_her_son_1983.1.29.jpg");
-    background-size: cover;
-    background-position: top center;
+    text-align: center;
+}
 
+#sobre_sua_arte {
+    margin-top: 50px;
     padding: 50px 0px;
 
     display: flex;
     flex-flow: column;
     align-items: center;
+    text-align: center;
+}
+
+#sobre_sua_arte h4 {
+    margin: 50px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
 }
 
 #sobre_sua_arte article {
     width: 60%;
+    height: 400px;
 
     background-color: #232323;
 
@@ -216,74 +230,87 @@ main {
     overflow: hidden;
 
     margin-bottom: 50px;
+
+    display: flex;
 }
 
 .info_article {
     padding: 25px;
+
+    width: 30%;
 
     display: flex;
     flex-flow: column;
 }
 
 .info_article h3, p {
-    margin: 0px;
+    margin: 10px;
     padding: 10px;
-    text-align: left;
 }
 
 .luz_sombra {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-flow: row;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15) 65%, transparent), url("../img/argenteuil_1970.17.42.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.luz_sombra img {
-    padding-left: 10px;
-    object-fit: cover;
+.cor_atmosfera {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15) 35%, transparent), url("../img/the_houses_of_parliament_sunset_1963.10.48.jpg");
+    background-size: cover;
+    background-position: center;
+
 }
 
-.ar_livre {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-flow: row;
+.natureza {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15) 60%, transparent), url("../img/the_artist_s_garden_at_vetheuil_1970.17.45.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.ar_livre img {
-    padding-right: 10px;
-    object-fit: cover;
+.pinceladas {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15) 70%, transparent), url("../img/rouen_cathedral_west_facade_1963.10.49.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.pincel {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-flow: row;
+.reflexo {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15) 65%, transparent), url("../img/the_seine_at_giverny_1963.10.180.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.pincel picture img {
-    padding-left: 10px;
-    object-fit: cover;
+.series {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.15) 65%, transparent), url("../img/waterloo_bridge_london_at_dusk_1983.1.27.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.repeticao {
-    width: 100%;
-    display: flex;
-    flex-flow: column;
+.info_left {
+    margin-right: auto;
+    text-align: left;
 }
 
-.serie {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-around;
+.info_left p {
+    text-align: leftt;
 }
 
-.serie img {
-    width: 33.3%;
-    object-fit: cover;
+.info_right {
+    margin-left: auto;
+    text-align: right;
 }
 
+.info_right p {
+    text-align: right;
+}
+
+.info_center {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+.info_center p {
+    text-align: center;
+}
 
 /* Trabalhos */
 
@@ -334,16 +361,18 @@ footer {
 
     border-top: 1px solid #232323;
 
-    text-align: center;
+    align-items: center;
 }
 
 footer h2 {
     padding: 20px;
+    text-align: center;
 }
 
 footer p {
     margin: 0px;
     padding: 10px;
+    width: 100%;
     text-align: center;
 }
 
