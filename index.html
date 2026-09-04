@@ -4,30 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>JOJI</title>
+    <title>MONET</title>
 </head>
 <body>
     <header>
-        <h1>JOJI</h1>
+        <h1>MONET</h1>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#aba_1">Aba 1</a>
-            <a href="#aba_2">Aba 2</a>
+            <a class="selecionado" href="index.html">Home</a>
+            <a href="arte.html">Sua Arte</a>
+            <a href="trabalhos.html">Trabalhos</a>
         </nav>
     </header>
     <main>
-        <section id="home">
-
+        <section id="introducao">
+            <div>
+                <h1>Monet?</h1>
+                <p>Claude Monet (1840–1926) foi um dos principais nomes do Impressionismo. Em suas obras, explorou a luz, as cores e as mudanças da natureza, buscando capturar não apenas uma paisagem, mas a sensação de observá-la em determinado momento.</p>            
+            </div>
         </section>
-        <section id="aba_1">
-            
-        </section>
-        <section id="aba_2">
-            
+        <section id="linha_tempo">
+            <h1>Sua história</h1>
+            <div class="cards" id="cards">
+                <article class="card">
+                    <img src="./img/the_japanese_footbridge_1992.9.1.jpg">
+                    <div class="info">
+                        <h2>1840</h2>
+                        <h3>Nascimento</h3>
+                        <p>Claude Monet nasce em Paris, França, em 14 de novembro.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./img/the_japanese_footbridge_1992.9.1.jpg">
+                    <div class="info">
+                        <h2>1858</h2>
+                        <h3>Início da carreira artística</h3>
+                        <p>Ainda jovem, Monet começa a se dedicar seriamente à pintura e conhece Eugène Boudin, que influencia seu interesse por pintar paisagens ao ar livre.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./img/the_japanese_footbridge_1992.9.1.jpg">
+                    <div class="info">
+                        <h2>1860s</h2>
+                        <h3>Novas ideias sobre pintura</h3>
+                        <p>Monet passa a experimentar novas formas de representar a luz e a natureza, afastando-se das convenções acadêmicas da época.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./img/the_japanese_footbridge_1992.9.1.jpg">
+                    <div class="info">
+                        <h2>1874</h2>
+                        <h3>Impressionismo</h3>
+                        <p>Monet passa a experimentar novas formas de representar a luz e a natureza, afastando-se das convenções acadêmicas da época.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./img/the_japanese_footbridge_1992.9.1.jpg">
+                    <div class="info">
+                        <h2>1883</h2>
+                        <h3>Giverny</h3>
+                        <p>Monet se muda para Giverny, onde cria seu famoso jardim. O local se torna uma de suas principais fontes de inspiração.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./img/the_japanese_footbridge_1992.9.1.jpg">
+                    <div class="info">
+                        <h2>1890s</h2>
+                        <h3>As grandes séries</h3>
+                        <p>Produz algumas de suas séries mais famosas, como Haystacks, Rouen Cathedral e Water Lilies, explorando como a luz transforma uma mesma cena.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./img/the_japanese_footbridge_1992.9.1.jpg">
+                    <div class="info">
+                        <h2>1926</h2>
+                        <h3>Fim da vida</h3>
+                        <p>Monet morre em Giverny, aos 86 anos, deixando uma das obras mais influentes da história da pintura moderna.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="scroll">
+                <button id="left" onclick="scrollCards(-1)">←</button>
+                <button id="right" onclick="scrollCards(1)">→</button>
+            </div>
         </section>
     </main>
     <footer>
-        <h2>Joji</h2>
+        <h2>Monet</h2>
+        <p>Todas as obras que apaarecem nesse site foram retiradas da Natinal Gallery of Art</p>
+        <p>Para acessar mais obras confira: <a>https://www.nga.gov</a></p>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
